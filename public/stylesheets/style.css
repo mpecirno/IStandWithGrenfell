@@ -5,3 +5,36 @@ body {
 a {
   color: #00b7ff;
 }
+
+.site-container{
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  flex-direction: column;
+  width: 100vw;
+  background-color: black;
+}
+
+#Panel1{
+  width: 100vw;
+  height: 100vh;
+  background-color: green;
+}
+
+#Panel2{
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+}
+
+#Panel3{
+  width: 100vw;
+  height: 100vh;
+  background-color: grey;
+}
+
+#Panel4{
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}

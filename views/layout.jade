@@ -1,7 +1,34 @@
 doctype html
+// pseudo mockup of page to be translated to pug/jade later
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Justice 4 Grenfell Posterboard
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
   body
-    block content
+    .site-container
+      section#Panel1
+        p Panel 1
+          Tell us why you want to make this poster
+          gallery selections
+          // button – continue
+          // button – go to the gallery
+      section#Panel2
+        p Panel 2
+          I stand with Grenfell because of this...
+          // blank form field for entry
+          // button – continue
+      section#Panel3
+        p Panel 3
+          Poster is generated here
+          // save poster as a JPG
+          // share poster to the gallery
+          // share poster to fb/twitter
+          // clear and start over [move to panel 2]
+      section#Panel4
+        p Panel 4
+          | Gallery is here
+          | // View Gallery
+          | // Submit your poster to gallery [if panel 3 has a poster]
+      footer
+        p footer content goes here
