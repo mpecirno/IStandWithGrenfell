@@ -26,14 +26,16 @@ html(data-wf-page='5ae8ca5f2e622f12ec70fac1', data-wf-site='5ae8ca5f2e622f954070
         br
         br
         |  Tell us why you stand with Grenfell, then download and share your poster from wherever you are in the world.
-      .text-block Find out more about Justice4Grenfell
+      .text-block Find out more about 
+        span Justice4Grenfell
+      #arrow-down &#x2196;
       a#panel-2.w-inline-block
     .section-form
       .text-block-2 I stand with Grenfell because...
       .div-block-2
         .w-form
           form#poster-input.form(name='email-form', data-name='Email Form')
-            input#statement.text-field-2.w-input(type='text', maxlength='256', name='statement', data-name='statement', placeholder='|')
+            input#statement.text-field-2.w-input(type='text', maxlength='256', name='statement', data-name='statement', placeholder='')
             input#Location.text-field.w-input(type='text', maxlength='256', name='Location', data-name='Location', required='')
             .text-block-4 Location
             input.submit-button.w-button(type='submit', value='Make my poster', data-wait='Please wait...')
