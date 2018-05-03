@@ -1,33 +1,32 @@
-.section {
-  background-image: -webkit-linear-gradient(270deg, rgba(20, 0, 255, .5), rgba(20, 0, 255, .5));
-  background-image: linear-gradient(180deg, rgba(20, 0, 255, .5), rgba(20, 0, 255, .5));
+@font-face {
+    font-family: 'Walsheim';
+    src: url("fonts/GTWalsheimMedium.eot");
+    src: url('fonts/GTWalsheimMedium.woff') format('woff'),
+         url('fonts/GTWalsheimMedium.ttf') format('truetype'),
+    font-weight: 400;
+    font-style: normal;
 }
 
-.section-2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  background-image: -webkit-linear-gradient(270deg, rgba(0, 255, 20, .5), rgba(0, 255, 20, .5));
-  background-image: linear-gradient(180deg, rgba(0, 255, 20, .5), rgba(0, 255, 20, .5));
+@font-face {
+    font-family: 'Walsheim';
+    src: url('fonts/GT-Walsheim-Ultra-Bold.eot');
+    src: url('fonts/GT-Walsheim-Ultra-Bold.woff') format('woff'),
+         url('fonts/GT-Walsheim-Ultra-Bold.ttf') format('truetype'),
+    font-weight: 700;
+    font-style: normal;
 }
+
 
 #arrow-down{
   font-size: 50px;
   margin-top: 50px;
-  transform: rotate(-135deg);
   color: #3b9b3f;
 }
 .body {
   padding: 0px;
 }
 
-.section-intro {
+#section-intro {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -62,24 +61,25 @@
   -ms-flex: 0 auto;
   flex: 0 auto;
   direction: ltr;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #3b9b3f;
-  font-size: 27px;
-  line-height: 34px;
-  font-weight: 600;
+  font-size: 2.5vw;
+  line-height: 1.5;
+  font-weight: 400;
   text-align: center;
 }
 
 .text-block {
   margin-top: 20px;
   color: #3b9b3f;
+  text-align: center;
 }
 
 .text-block span{
   text-decoration: underline;
 }
 
-.section-form {
+#section-form {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -102,7 +102,9 @@
   background-image: linear-gradient(180deg, #3b9b3f, #3b9b3f);
 }
 
-.section-poster {
+
+
+#section-poster {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -112,7 +114,7 @@
   background-image: linear-gradient(180deg, #d8ebbf, #d8ebbf);
 }
 
-.section-gallery {
+#section-gallery {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -124,10 +126,10 @@
 
 .text-block-2 {
   max-width: 80vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #d8ebbf;
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .text-block-3 {
@@ -145,7 +147,7 @@
   background-image: -webkit-linear-gradient(270deg, transparent, transparent);
   background-image: linear-gradient(180deg, transparent, transparent);
   color: #d8ebbf;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .form {
@@ -177,12 +179,33 @@
   border-bottom-width: 1px;
   border-bottom-color: #d8ebbf;
   background-color: transparent;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #d8ebbf;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+
+.poster-input-text {
+  overflow: visible;
+  width: 60vw;
+  height: auto;
+  border-style: solid;
+  border-width: 0px 0px 1px;
+  border-color: #000 #000 #d8ebbf;
+  background-color: transparent;
+  background-image: -webkit-linear-gradient(270deg, transparent, transparent);
+  background-image: linear-gradient(180deg, transparent, transparent);
+  font-family: 'Walsheim', arial black, sans-serif;
+  color: #d8ebbf;
+  font-size: 50px;
+  font-weight: 700;
   text-align: center;
 }
 
-.text-field-2 {
+/* old input text here */
+.text-field-statement {
   width: 60vw;
   height: 20vh;
   border-style: none none solid;
@@ -191,15 +214,16 @@
   background-color: transparent;
   background-image: -webkit-linear-gradient(270deg, transparent, transparent);
   background-image: linear-gradient(180deg, transparent, transparent);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #d8ebbf;
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 700;
   text-align: center;
+  word-break: break-all;
 }
 
 .text-block-4 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #d8ebbf;
 }
 
@@ -290,7 +314,7 @@
   border-radius: 75px;
   background-image: -webkit-linear-gradient(270deg, #3b9b3f, #3b9b3f);
   background-image: linear-gradient(180deg, #3b9b3f, #3b9b3f);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   font-size: 10px;
   text-align: center;
 }
@@ -303,7 +327,7 @@
   border-radius: 75px;
   background-image: -webkit-linear-gradient(270deg, #3b9b3f, #3b9b3f);
   background-image: linear-gradient(180deg, #3b9b3f, #3b9b3f);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   font-size: 10px;
   text-align: center;
 }
@@ -316,13 +340,13 @@
   border-radius: 75px;
   background-image: -webkit-linear-gradient(270deg, #3b9b3f, #3b9b3f);
   background-image: linear-gradient(180deg, #3b9b3f, #3b9b3f);
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   font-size: 10px;
   text-align: center;
 }
 
 .text-block-5 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #3b9b3f;
   font-size: 10px;
   text-transform: uppercase;
@@ -344,7 +368,7 @@
 }
 
 .text-block-6 {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #3b9b3f;
   font-size: 10px;
   text-transform: uppercase;
@@ -352,7 +376,7 @@
 
 .text-block-7 {
   display: inline-block;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serif;
   color: #3b9b3f;
   font-size: 12px;
   text-transform: uppercase;
@@ -360,7 +384,7 @@
 
 .text-block-8 {
   display: inline;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Walsheim', arial black, sans-serifs;
   color: #3b9b3f;
   font-size: 12px;
   text-transform: uppercase;

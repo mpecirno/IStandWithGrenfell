@@ -20,30 +20,31 @@ html(data-wf-page='5ae8ca5f2e622f12ec70fac1', data-wf-site='5ae8ca5f2e622f954070
     link(href='https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico', rel='shortcut icon', type='image/x-icon')
     link(href='https://daks2k3a4ib2z.cloudfront.net/img/webclip.png', rel='apple-touch-icon')
   body.body
-    .section-intro
+    #section-intro
       .div-block
         | The 14 June 2018 marks the one year anniversary of the Grenfell Tower fire.
         br
         br
         |  Tell us why you stand with Grenfell, then download and share your poster from wherever you are in the world.
-      .text-block Find out more about 
-        span Justice4Grenfell
-      #arrow-down &#x2196;
-      a#panel-2.w-inline-block
-    .section-form
+      a(href='#section-form')
+        .text-block Find out more about 
+          span Justice4Grenfell
+          #arrow-down &#x2193;
+          a#panel-2.w-inline-block
+    #section-form
       .text-block-2 I stand with Grenfell because...
       .div-block-2
         .w-form
           form#poster-input.form(name='email-form', data-name='Email Form')
-            input#statement.text-field-2.w-input(type='text', maxlength='256', name='statement', data-name='statement', placeholder='')
-            input#Location.text-field.w-input(type='text', maxlength='256', name='Location', data-name='Location', required='')
+            textarea#poster-text.poster-input-text.w-input(data-name='poster-text', maxlength='256', name='poster-text')
+            input#Location.text-field.w-input(data-name='Location', maxlength='256', name='Location', required='required', type='text')
             .text-block-4 Location
             input.submit-button.w-button(type='submit', value='Make my poster', data-wait='Please wait...')
           .w-form-done
             div Thank you! Your submission has been received!
           .w-form-fail
             div Oops! Something went wrong while submitting the form.
-    .section-poster
+    #section-poster
       .row.w-row
         .column.w-col.w-col-4
           .text-block-5 Change colour
@@ -57,7 +58,7 @@ html(data-wf-page='5ae8ca5f2e622f12ec70fac1', data-wf-site='5ae8ca5f2e622f954070
           a.button-download.w-button(href='#') Download
           a.button-twitter.w-button(href='#') Twitter
           a.button-fb.w-button(href='#') Facebook
-    .section-gallery
+    #section-gallery
     script(src='https://code.jquery.com/jquery-3.3.1.min.js', type='text/javascript', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
     script(src='javascripts/webflow.js', type='text/javascript')
     //if lte IE 9
