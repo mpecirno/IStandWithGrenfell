@@ -1,0 +1,59 @@
+Items to be resolved on site:
+
+//in preferred order of completion!
+
+[x] get add to gallery to push to mongodb
+
+[x] add link to go to gallery
+[x] gallery at bottom of page? consider options
+
+[x] Add down arrow to 'submit' on panel 2
+[x] Add up arrow to 'edit' poster on panel 3
+[x] Centre and re-style panel 2
+[x] add in an edit poster button below
+
+[x] Unique link via web address? Eg... get id from url and use to compose poster from mongodb
+
+HOME STRETCH!
+
+//functions
+[x] - Remove default "enter" functionality
+[x] - change colour functionality
+[x] - Build simple fb share functionality (https://stackoverflow.com/questions/21215676/facebook-share-button-for-dynamic-url)
+[x] - Build simple twitter share functionality (https://codepen.io/Huskie/pen/wKphk
+[x] - get view gallery arrow directed to the right panel
+
+Last things!
+[x] - all type Change
+[x] - add in justice logo
+[x] - placeholder text or auto align on message
+[x] - make sure arrow pushes
+
+[x] - Wrap textfield
+[x] - fix on redirect to come in the same on generated poster and on right panel #section-poster
+[ ] - Download poster function (steal from MS??)
+[ ] - Only pull x number of recent Posters
+
+
+///
+
+
+$('#submit-button').click(function() {
+    e.preventDefault();
+    $.ajax({
+        global: false,
+        type: 'POST',
+        url: '/user/change',
+        dataType: 'html',
+        data: {
+            Message: $("#poster-text-hidden").val(),
+            Location: $("#location-hidden").val(),
+        },
+        success: function (result) {
+            console.log(result);
+        },
+        error: function (request, status, error) {
+            serviceError();
+        }
+    });
+});

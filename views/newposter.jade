@@ -1,0 +1,20 @@
+extends layout
+
+block postercontent
+  #section-form
+    .text-block-2 I stand with Grenfell because...
+    .div-block-2
+      form#poster-input(name="addposter_local", method="post", action="/section-poster")
+        span Message
+        span &nbsp;
+        textarea#poster-text.poster-input-text.w-input(style="overflow:auto;resize:none", data-name='poster-text', maxlength='256', name='Message-local')
+        br
+        br
+        span Location
+        span &nbsp;
+        input#Location.text-field.w-input(data-name='Location', maxlength='256', name='Location-local', required='required', type='text')
+        .text-block-4 Location
+        br
+        br
+        br
+        button#submit-local(type='submit', id="valueSubmit", value='submit-local') Submit

@@ -1,0 +1,17 @@
+extends layout
+
+block generatedposter
+  .row.w-row
+  .column.w-col.w-col-4
+    .text-block-5 Change colour
+    a.green-button.w-button(href='#colour-green')
+    a.lightgreen-button.w-button(href='#colour-green')
+  .column-3.w-col.w-col-4
+    #poster-generated
+      #{postercontent}
+    .text-block-7 Add to gallery
+    .text-block-8 View Gallery
+  .column-2.w-col.w-col-4
+    a.button-download.w-button(href='#') Download
+    a.button-twitter.w-button(href='#') Twitter
+    a.button-fb.w-button(href='#') Facebook

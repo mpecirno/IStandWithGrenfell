@@ -1,0 +1,9 @@
+extends layout
+
+block posterlist
+  #section-gallery
+    h3= gallery
+    ul
+      each poster, i in posterlist
+        li#poster_list_item
+          a(href="#") #{poster.Message} from #{poster.Location}

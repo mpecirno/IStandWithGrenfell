@@ -18,6 +18,10 @@ html {
 body {
   margin: 0;
 }
+input:focus, textarea {
+    outline: none !important;
+}
+
 /* HTML5 display definitions
    ========================================================================== */
 /**
@@ -75,11 +79,6 @@ template {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-a {
-  background-color: transparent;
-  text-decoration: none;
-  color: #3b9b3f;
-}
 /**
  * Improve readability of focused elements when they are also in an
  * active/hover state.
@@ -113,11 +112,6 @@ dfn {
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari, and Chrome.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
 /**
  * Address styling not present in IE 8/9.
  */
@@ -219,9 +213,6 @@ textarea {
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
-button {
-  overflow: visible;
-}
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
  * All other form control elements do not inherit `text-transform` values.
