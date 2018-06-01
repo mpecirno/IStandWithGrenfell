@@ -8,11 +8,12 @@ $('#save_image_locally').click(function(){
 
 function takeHighResScreenshot(srcEl, destIMG, scaleFactor) {
 
-// ensure browser is at correct position
+//ensure browser is at correct position
     $('html,body').animate({
-    scrollTop: $("#section-poster").offset().top},
+    scrollTop: $("#section-gallery").offset().bottom},
     0);
-// Save original size of element
+    console.log("scrolled");
+//Save original size of element
 var originalWidth = srcEl.offsetWidth;
 var originalHeight = srcEl.offsetHeight;
 // Force px size (no %, EMs, etc)
@@ -25,7 +26,7 @@ var OriginalStylePosition = srcEl.style.position;
 var OriginalStyleTop = srcEl.style.top;
 var OriginalStyleLeft = srcEl.style.left;
 
-srcEl.style.position = "absolute";
+srcEl.style.position = "fixed";
 srcEl.style.top = "0";
 srcEl.style.left = "0";
 

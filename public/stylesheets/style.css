@@ -604,11 +604,11 @@ button{
 
 
 #poster-generated {
+  position: relative;
   height: 520px;
-  width: 725px;
-  margin: 10px;
+  width: 700px;
+  margin: 0 auto;
   background-color: #3b9b3f;
-  padding: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;

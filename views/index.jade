@@ -34,9 +34,9 @@ block postercontent
       a(href="/#section-poster")#make-my-poster
         #internal-submit Make my poster
           #p2arrow-down &#x2193;
+
         
 block generatedposter
-  #section-poster
     .column-left
       .text-block-5 Colour
       input#colorChoice1.green-button(type='button', onclick="swapStyleSheet('stylesheets/style.css')")
@@ -66,11 +66,11 @@ block generatedposter
             #p3arrow-down &#x2193;
     .column-right
       .text-block-5 Share
-      //#save_image_float
-        input#save_image_locally.button-download.w-button(type='button', value='Download', data-html2canvas-ignore='true')
       #save_image_float
-      a.button-twitter.button-download(href="https://twitter.com/intent/tweet?url=<?=urlencode($url)?>&text=I%20stand%20with%20Grenfell", target="_blank") Twitter
+      a.button-twitter.button-download(href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.justice4grenfell.co.uk&text=I%20stand%20with%20Grenfell.%20&hashtags=justice4grenfell", target="_blank") Twitter
       a#button-fb.button-download(href='#') Facebook
+      #save_image_float
+        input#save_image_locally.button-download.w-button(type='button', value='Download', data-html2canvas-ignore='true')
       
     
 block posterlist
