@@ -76,7 +76,7 @@ span{
 ul {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
@@ -484,12 +484,13 @@ input, label{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   flex: 2 1 0;
   left: 0px;
   top: 0px;
   right: 0px;
   bottom: 0px;
-  height: auto%;
+  height: auto;
   padding: 10px;
   text-align: center;
 }
@@ -605,10 +606,10 @@ button{
 
 #poster-generated {
   position: relative;
-  height: 520px;
-  width: 700px;
+  height: calc(1.5*297px);
+  width: calc(1.5*210px);
   margin: 0 auto;
-  background-color: #d8ebbf;
+  background-color: #3b9b3f;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -618,7 +619,7 @@ button{
 
 #poster-generated-phrase{
   font-family: 'Pragati Narrow', sans-serif;
-  color: #3b9b3f;
+  color: #d8ebbf;
   font-size: 50px;
   font-weight: 700;
   line-height: 1.1;
@@ -626,7 +627,7 @@ button{
 
 #poster-generated-location{
   font-family: 'Pragati Narrow', sans-serif;
-  color: #3b9b3f;
+  color: #d8ebbf;
   font-size: 18px;
   font-weight: 400;
 }
@@ -732,7 +733,7 @@ button{
   #column-center { /*center*/
     display: flex;
     flex-direction: column;
-    flex: 2 1 0;
+    flex: 1 1 0;
     height: 100vh;
     width: 100%;
     padding: 0px;
@@ -745,7 +746,7 @@ button{
   #poster-generated {
     height: 100%;
     width: auto;
-    background-color: #d8ebbf;
+    background-color: #3b9b3f;
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
