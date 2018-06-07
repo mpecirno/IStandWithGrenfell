@@ -744,10 +744,10 @@ button{
     display: none!important;
   }
 
-  /* #poster-generated {
-    height: 100%;
+  #poster-generated {
+    /* height: 100%; */
     width: auto;
-    background-color: #d8ebbf;
+    /* background-color: #d8ebbf;
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
@@ -756,8 +756,8 @@ button{
     margin: 0px;
     border-style: solid;
     border-color: #d8ebbf;
-    border-width: 15px;
-  } */
+    border-width: 15px; */
+  }
 
   #shift-container{
     display: flex;
