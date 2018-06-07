@@ -747,6 +747,7 @@ button{
   #poster-generated {
     /* height: 100%; */
     width: auto;
+    padding: 20px;
     /* background-color: #d8ebbf;
     text-align: center;
     display: flex;
