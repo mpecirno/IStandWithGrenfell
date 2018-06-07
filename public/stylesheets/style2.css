@@ -743,7 +743,7 @@ button{
     display: none!important;
   }
 
-  #poster-generated {
+  /* #poster-generated {
     height: 100%;
     width: auto;
     background-color: #3b9b3f;
@@ -756,7 +756,7 @@ button{
     border-style: solid;
     border-color: #3b9b3f;
     border-width: 15px;
-  }
+  } */
 
   #shift-container{
     display: flex;
