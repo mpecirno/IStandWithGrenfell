@@ -13,7 +13,7 @@
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "kerberos": "~0.0.17",
-    "mongodb": "^2.2.35",
+    "mongodb": "^3.1.13",
     "morgan": "~1.9.0",
     "server": "^1.0.18",
     "stylus": "0.54.5"
